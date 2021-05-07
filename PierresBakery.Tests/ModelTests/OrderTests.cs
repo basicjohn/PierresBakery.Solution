@@ -1,25 +1,24 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery.Bread;
+using PierresBakery.Order;
 
-namespace Bread.Tests
+namespace Order.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class OrderTests
   {
     [TestMethod]
-    public void AddBread_IsBread_String()
+    public void AddOrder_IsOrder_String()
     {
-      Bread testBread = new Bread("Como");
+      Order testOrder = new Order();
       Assert.AreEqual("Como", testBread.Type);
     }
 
 
     [TestMethod]
-    public void AddBread_IsPrice_String()
+    public void AddOrder_IsOrder_String()
     {
-      Bread testBread = new Bread("Como");
-      Int testPrice = 5;
-      Assert.AreEqual(testPrice, testBread.Price);
+      Order testOrder = new Order();
+      Assert.AreEqual("Como", testBread.Type);
     }
   }
 }

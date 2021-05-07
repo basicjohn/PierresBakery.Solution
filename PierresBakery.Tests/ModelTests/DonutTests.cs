@@ -1,10 +1,10 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using PierresBakery.Bread;
+using PierresBakery.Donut;
 
-namespace Bread.Tests
+namespace Donut.Tests
 {
   [TestClass]
-  public class BreadTests
+  public class DonutTests
   {
     // [TestMethod]
     // public void CheckType_IsNotATriangle_String()

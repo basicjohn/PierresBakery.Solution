@@ -13,13 +13,12 @@ namespace Bread.Tests
       Assert.AreEqual("Croissant", testBread.Type);
     }
 
-
     [TestMethod]
     public void AddPastry_IsPrice_String()
     {
-      Pastry testPastry = new Pastry("Como");
-      Int testPrice = 5;
-      Assert.AreEqual(testPrice, testBread.Price);
+      Pastry testPastry = new Pastry("Croissant");
+      Int testPrice = 2;
+      Assert.AreEqual(testPrice, testPastry.Price);
     }
   }
 }

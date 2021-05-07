@@ -1,8 +1,8 @@
-﻿namespace PierresBakery.Pastry
-{
-  public class Pastry
+﻿// namespace PierresBakery.Pastry
+// {
+//   public class Pastry
 
-  {
+//   {
 
-  }
-}
+//   }
+// }

@@ -10,7 +10,7 @@ namespace Bread.Tests
     public void AddBread_IsBread_String()
     {
       Bread testBread = new Bread("Como");
-      Assert.AreEqual("Como", testBread.Type);
+      Assert.AreEqual("Como", testBread.BreadType);
     }
 
 

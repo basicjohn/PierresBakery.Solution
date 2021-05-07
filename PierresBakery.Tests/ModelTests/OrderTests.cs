@@ -7,10 +7,11 @@ namespace Bread.Tests
   public class BreadTests
   {
     // [TestMethod]
-    // public void CheckType_IsNotATriangle_String()
+    // public void AddBread_IsBread_String()
     // {
-    //   Bread testBread = new Bread();
-    //   Assert.AreEqual("That is not a triangle", testTriangle.CheckType(50, 30, 1));
+    //   Bread testBread = new Bread("Como");
+    //   Assert.AreEqual("Como", testBread.Type);
+    //   Assert.AreEqual("That is not a triangle", testBread.Type);
     // }
   }
 }

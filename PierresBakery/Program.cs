@@ -1,5 +1,6 @@
 using System;
-using PierresBakery.Models;
+using PierresBakery.Breads;
+using PierresBakery.Pastries;
 
 namespace PierresBakery
 {
@@ -15,6 +16,8 @@ namespace PierresBakery
       // Console.WriteLine("Please enter the third side of your triangle: ");
       // int side3 = int.Parse(Console.ReadLine());
       // Console.WriteLine(newTriangle.CheckType(side1, side2, side3));
+      Bread NewBread = new Bread("Como");
+      Pastry NewPastry = new Pastry("Scone");
     }
   }
 }

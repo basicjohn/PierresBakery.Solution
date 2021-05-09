@@ -13,5 +13,10 @@ namespace PierresBakery.Breads
       Price = 5;
       Quantity = 0;
     }
+
+    public int AddBread(int quantity)
+    {
+      return Quantity + quantity;
+    }
   }
 }

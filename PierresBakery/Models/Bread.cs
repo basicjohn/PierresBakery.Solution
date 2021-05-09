@@ -4,9 +4,10 @@ namespace PierresBakery.Breads
 {
   public class Bread
   {
-    public string BreadType { get; }
-    public int Price { get; }
-    public int Quantity { get; }
+    public string BreadType { get; set; }
+    public int Price { get; set; }
+    public int Quantity { get; set; }
+    public int BreadsSubtotal { get; set; }
     public Bread(string breadType)
     {
       BreadType = breadType;
@@ -16,7 +17,15 @@ namespace PierresBakery.Breads
 
     public int AddBread(int quantity)
     {
-      return Quantity + quantity;
+      Quantity = Quantity + quantity;
+      return Quantity;
+    }
+
+    public void BreadSubtotal()
+    {
+      // Console.WriteLine(Math.Floor(Quantity / 3));
+      int freeBread = Quantity / 3;
+      BreadsSubtotal = (Quantity - freeBread) * Price;
     }
   }
 }

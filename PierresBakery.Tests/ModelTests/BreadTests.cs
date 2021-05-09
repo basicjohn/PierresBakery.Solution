@@ -29,6 +29,17 @@ namespace PierresBakery.Breads.Tests
       int testQuantity = 5;
       Assert.AreEqual(testQuantity, testBread.AddBread(5));
     }
+
+
+    [TestMethod]
+    public void BreadSubtotal_IsSubtotal_Int()
+    {
+      Bread testBread = new Bread("Como");
+      testBread.AddBread(41);
+      testBread.BreadSubtotal();
+      int testSubtotal = 140;
+      Assert.AreEqual(testSubtotal, testBread.BreadsSubtotal);
+    }
   }
 }
 

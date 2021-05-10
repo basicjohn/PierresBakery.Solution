@@ -11,7 +11,6 @@ namespace PierresBakery.Breads.Tests
       Bread testBread = new Bread("Como");
       Assert.AreEqual("Como", testBread.BreadType);
     }
-
     [TestMethod]
     public void AddBread_IsPrice_String()
     {
@@ -19,9 +18,6 @@ namespace PierresBakery.Breads.Tests
       int testPrice = 5;
       Assert.AreEqual(testPrice, testBread.Price);
     }
-
-
-
     [TestMethod]
     public void AddBread_IsQuantity_Int()
     {
@@ -29,8 +25,6 @@ namespace PierresBakery.Breads.Tests
       int testQuantity = 5;
       Assert.AreEqual(testQuantity, testBread.AddBread(5));
     }
-
-
     [TestMethod]
     public void BreadSubtotal_IsSubtotal_Int()
     {

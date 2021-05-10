@@ -11,7 +11,6 @@ namespace PierresBakery.Pastries.Tests
       Pastry testPastry = new Pastry("Scone");
       Assert.AreEqual("Scone", testPastry.PastryType);
     }
-
     [TestMethod]
     public void AddPastry_IsPrice_String()
     {
@@ -19,9 +18,6 @@ namespace PierresBakery.Pastries.Tests
       int testPrice = 2;
       Assert.AreEqual(testPrice, testPastry.Price);
     }
-
-
-
     [TestMethod]
     public void AddPastry_IsQuantity_Int()
     {
@@ -29,8 +25,6 @@ namespace PierresBakery.Pastries.Tests
       int testQuantity = 5;
       Assert.AreEqual(testQuantity, testPastry.AddPastry(5));
     }
-
-
     [TestMethod]
     public void PastrySubtotal_IsSubtotal_Int()
     {

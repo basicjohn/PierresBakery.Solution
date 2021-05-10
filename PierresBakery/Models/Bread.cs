@@ -21,7 +21,6 @@
 
     public void BreadSubtotal()
     {
-      // Console.WriteLine(Math.Floor(Quantity / 3));
       int freeBread = Quantity / 3;
       BreadsSubtotal = (Quantity - freeBread) * Price;
     }

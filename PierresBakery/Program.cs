@@ -8,17 +8,9 @@ namespace PierresBakery
   {
     public static void Main()
     {
-      // int caseSwitch = 0;
       Bread NewBread = new Bread("Rustic Loaf");
       Pastry NewPastry = new Pastry("House Scone");
-      // Console.WriteLine("Welcome to Peirre's Bakery!");
-      // Console.WriteLine("THE PLACE for outstanding breads & pastries");
-      // int side1 = int.Parse(Console.ReadLine());
-      // Console.WriteLine("Please enter the second side of your triangle: ");
-      // int side2 = int.Parse(Console.ReadLine());
-      // Console.WriteLine("Please enter the third side of your triangle: ");
-      // int side3 = int.Parse(Console.ReadLine());
-      // Console.WriteLine(newTriangle.CheckType(side1, side2, side3));
+      Console.WriteLine("");
       Console.WriteLine("______ _                    _      ______       _                   ");
       Console.WriteLine("| ___ (_)                  ( )     | ___ \\     | |                  ");
       Console.WriteLine("| |_/ /_  ___ _ __ _ __ ___|/ ___  | |_/ / __ _| | _____ _ __ _   _ ");
@@ -31,9 +23,10 @@ namespace PierresBakery
       Console.WriteLine("");
       Console.WriteLine("WELCOME TO PIERRE'S BAKERY!                      ");
       Console.WriteLine("The BEST place for local breads & pastries.      ");
-      Console.WriteLine("Follow the instructions to begin with your order.");
-      // Console.WriteLine("");
+      Console.WriteLine("Follow the instructions below to begin.");
+      Console.WriteLine("");
       Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
+      Console.WriteLine("");
       Console.WriteLine("Type '1' for Bread & '2' for Pastries                ");
       int caseSwitch = 0;
       caseSwitch = int.Parse(Console.ReadLine());
@@ -44,7 +37,7 @@ namespace PierresBakery
         {
           case 1:
             Console.WriteLine("");
-            Console.WriteLine("You've selected Bread!");
+            Console.WriteLine("(You've selected Bread!)");
             Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
             Console.WriteLine("");
             Console.WriteLine("We have many types of bread but due to the       ");
@@ -63,9 +56,10 @@ namespace PierresBakery
             Console.WriteLine("or type '3' to checkout             ");
             caseSwitch = int.Parse(Console.ReadLine());
             break;
+
           case 2:
             Console.WriteLine("");
-            Console.WriteLine("You've selected Pastries!");
+            Console.WriteLine("(You've selected Pastries!)");
             Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
             Console.WriteLine("");
             Console.WriteLine("We offer many types of pastries but due to the   ");
@@ -83,8 +77,8 @@ namespace PierresBakery
             Console.WriteLine("Type '1' to order Bread                       ");
             Console.WriteLine("or type '3' to checkout             ");
             caseSwitch = int.Parse(Console.ReadLine());
-
             break;
+
           case 3:
             NewBread.BreadSubtotal();
             NewPastry.PastrySubtotal();
@@ -102,20 +96,20 @@ namespace PierresBakery
               Console.WriteLine("=============");
               Console.WriteLine("Rustic Loaves");
               Console.WriteLine("($5/each & get every 3rd free)");
-              Console.WriteLine("Price for " + NewBread.Quantity + ": " + NewBread.BreadsSubtotal);
+              Console.WriteLine("Price for " + NewBread.Quantity + ": $" + NewBread.BreadsSubtotal + ".00");
               Console.WriteLine("");
               Console.WriteLine("House Scones");
               Console.WriteLine("($2/each & get every 3rd half price)");
-              Console.WriteLine("Price for " + NewPastry.Quantity + ": " + NewPastry.PastriesSubtotal);
+              Console.WriteLine("Price for " + NewPastry.Quantity + ": $" + NewPastry.PastriesSubtotal + ".00");
               Console.WriteLine("=============");
               Console.WriteLine("Order Total");
-              Console.WriteLine(NewBread.BreadsSubtotal + NewPastry.PastriesSubtotal);
+              Console.WriteLine("$" + NewBread.BreadsSubtotal + NewPastry.PastriesSubtotal + ".00");
               Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
               Console.WriteLine("");
               Console.WriteLine("Thank you for your order. You may close the page now.          ");
               caseSwitch = 4;
             }
-            if (NewBread.Quantity > 0)
+            else if (NewBread.Quantity > 0)
             {
               Console.WriteLine("");
               Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
@@ -129,17 +123,16 @@ namespace PierresBakery
               Console.WriteLine("=============");
               Console.WriteLine("Rustic Loaves");
               Console.WriteLine("($5/each & get every 3rd free)");
-              Console.WriteLine("Price for " + NewBread.Quantity + ": " + NewBread.BreadsSubtotal);
-              Console.WriteLine("");
+              Console.WriteLine("Price for " + NewBread.Quantity + ": $" + NewBread.BreadsSubtotal + ".00");
               Console.WriteLine("=============");
               Console.WriteLine("Order Total");
-              Console.WriteLine(NewBread.BreadsSubtotal);
+              Console.WriteLine("$" + NewBread.BreadsSubtotal + ".00");
               Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
               Console.WriteLine("");
               Console.WriteLine("Thank you for your order. You may close the page now.          ");
               caseSwitch = 4;
             }
-            if (NewPastry.Quantity > 0)
+            else if (NewPastry.Quantity > 0)
             {
               Console.WriteLine("");
               Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
@@ -151,13 +144,12 @@ namespace PierresBakery
               Console.WriteLine("");
               Console.WriteLine("Order Summary");
               Console.WriteLine("=============");
-              Console.WriteLine("Rustic Loaves");
-              Console.WriteLine("($5/each & get every 3rd free)");
-              Console.WriteLine("Price for " + NewBread.Quantity + ": " + NewBread.BreadsSubtotal);
-              Console.WriteLine("");
+              Console.WriteLine("House Scones");
+              Console.WriteLine("($2/each & get every 3rd half price)");
+              Console.WriteLine("Price for " + NewPastry.Quantity + ": $" + NewPastry.PastriesSubtotal + ".00");
               Console.WriteLine("=============");
               Console.WriteLine("Order Total");
-              Console.WriteLine(NewPastry.PastriesSubtotal);
+              Console.WriteLine("$" + NewPastry.PastriesSubtotal + ".00");
               Console.WriteLine("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-");
               Console.WriteLine("");
               Console.WriteLine("Thank you for your order. You may close the page now.          ");
@@ -169,9 +161,7 @@ namespace PierresBakery
               Console.WriteLine("'1' for Bread");
               Console.WriteLine("'2' for Pastries");
               Console.WriteLine("'4' to exit                ");
-
               caseSwitch = int.Parse(Console.ReadLine());
-
             }
             break;
         }

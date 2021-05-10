@@ -21,7 +21,6 @@
 
     public void PastrySubtotal()
     {
-      // Console.WriteLine(Math.Floor(Quantity / 3));
       int salePastry = Quantity / 3;
       PastriesSubtotal = ((Quantity - salePastry) * Price) + salePastry;
     }

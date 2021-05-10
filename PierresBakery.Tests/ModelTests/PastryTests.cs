@@ -16,7 +16,7 @@ namespace PierresBakery.Pastries.Tests
     public void AddPastry_IsPrice_String()
     {
       Pastry testPastry = new Pastry("Como");
-      int testPrice = 5;
+      int testPrice = 2;
       Assert.AreEqual(testPrice, testPastry.Price);
     }
 
@@ -37,8 +37,8 @@ namespace PierresBakery.Pastries.Tests
       Pastry testPastry = new Pastry("Como");
       testPastry.AddPastry(41);
       testPastry.PastrySubtotal();
-      int testSubtotal = 140;
-      Assert.AreEqual(testSubtotal, testPastry.PastrysSubtotal);
+      int testSubtotal = 69;
+      Assert.AreEqual(testSubtotal, testPastry.PastriesSubtotal);
     }
   }
 }

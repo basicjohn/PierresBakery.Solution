@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace PierresBakery.Breads
+﻿namespace PierresBakery.Breads
 {
   public class Bread
   {

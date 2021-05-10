@@ -8,14 +8,14 @@ namespace PierresBakery.Pastries.Tests
     [TestMethod]
     public void AddPastry_IsPastry_String()
     {
-      Pastry testPastry = new Pastry("Como");
-      Assert.AreEqual("Como", testPastry.PastryType);
+      Pastry testPastry = new Pastry("Scone");
+      Assert.AreEqual("Scone", testPastry.PastryType);
     }
 
     [TestMethod]
     public void AddPastry_IsPrice_String()
     {
-      Pastry testPastry = new Pastry("Como");
+      Pastry testPastry = new Pastry("Scone");
       int testPrice = 2;
       Assert.AreEqual(testPrice, testPastry.Price);
     }
@@ -25,7 +25,7 @@ namespace PierresBakery.Pastries.Tests
     [TestMethod]
     public void AddPastry_IsQuantity_Int()
     {
-      Pastry testPastry = new Pastry("Como");
+      Pastry testPastry = new Pastry("Scone");
       int testQuantity = 5;
       Assert.AreEqual(testQuantity, testPastry.AddPastry(5));
     }
@@ -34,7 +34,7 @@ namespace PierresBakery.Pastries.Tests
     [TestMethod]
     public void PastrySubtotal_IsSubtotal_Int()
     {
-      Pastry testPastry = new Pastry("Como");
+      Pastry testPastry = new Pastry("Scone");
       testPastry.AddPastry(41);
       testPastry.PastrySubtotal();
       int testSubtotal = 69;
